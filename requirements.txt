@@ -1,0 +1,5 @@
+torch==2.7.1
+transformers==4.53.1
+streamlit==1.46.1
+sacrebleu==2.5.1
+accelerate==1.8.1
