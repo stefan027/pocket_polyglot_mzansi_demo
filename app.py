@@ -66,6 +66,32 @@ st.html("""
 """)
 # st.title("Pocket Polyglot Mzansi")
 st.html('<h1 class="title-space">Pocket Polyglot Mzansi</h1>')
+with st.expander("About the Model", expanded=False):
+    st.caption(
+        """
+        Pocket Polyglot Mzansi is a small 50M parameter machine translation 
+        model for South African languages. The model is part of an ongoing 
+        research project that aims to develop a small (<50M parameters) 
+        machine translation model that matches or exceeds the accuracy 
+        of NLLN-200-600M on South African languages. The current version 
+        of the model is > 90% smaller than NLLB-200-600M, but sacrifices 
+        only 6.3% in accuracy in terms of chrF++.
+        """
+    )
+    st.caption(
+        """
+        **Intended use**:
+        Pocket Polyglot Mzansi is a research model. The intended use is 
+        deployment on edge devices for offline machine translation. It 
+        allows for single sentence translation among six languages.
+        """
+    )
+    st.caption(
+        """
+        For more information, see the
+        [model card](https://huggingface.co/stefan7/pocket_polyglot_mzansi_50M_6langs).
+        """
+    )
 c0, c1, c2 = st.columns([1, 2, 2], gap="medium")
 c0.image("assets/title-image-no-header.jpeg", width=200)
 
